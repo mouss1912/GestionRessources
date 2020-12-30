@@ -1,0 +1,18 @@
+Groupe: nom, type menbre
+appartenir, 1N Groupe, 1N Utilisateur
+Utilisateur: id, nomU, prenom, type, mot de passe
+
+Message: idM, date, couleur, statut, texte
+contenir1, 11 Message, 1N Ticket
+Ticket: titre, _nom groupe destiné, premier message
+contenir2, 1N Nœud, 11 Ticket
+Nœud: nom groupe
+
+
+// Ce que sa donne
+
+Groupe ( nom, type menbre ) 
+appartenir ( nom, id ) 
+Utilisateur ( id, nomU, prenom, type, mot de passe ) 
+Message ( idM, date, couleur, statut, texte, titre, nom groupe destiné ) 
+Ticket ( titre, nom groupe destiné, premier message, nom groupe ) 
